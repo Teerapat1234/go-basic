@@ -1,0 +1,4 @@
+go.mod
+vendor/
+.idea
+go.sum
