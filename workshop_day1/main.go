@@ -13,9 +13,10 @@ func main() {
 		HeightInMeterFloat: 1.67,
 	}
 
-	emp.PrintAll()
+	//emp.PrintAll()
 	emp.BMICalculator()
 	emp.BMIRanking()
 	emp.PrintHealthStatus()
+	emp.PrintAll()
 
 }
