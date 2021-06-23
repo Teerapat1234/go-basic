@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 	"github.com/labstack/gommon/log"
-	"go-tutorial/code_template/internal"
-	"go-tutorial/code_template/internal/models"
+	"go-basic-101/code_template/internal"
+	"go-basic-101/code_template/internal/models"
 )
 
 type employeeRepo interface {

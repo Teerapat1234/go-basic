@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-tutorial/basic_interface/model"
+	"go-basic-101/basic_interface/model"
 )
 
 type Bear struct {

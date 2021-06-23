@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-tutorial/basic_mutex/model"
+	"go-basic-101/basic_mutex/model"
 	"sync"
 )
 

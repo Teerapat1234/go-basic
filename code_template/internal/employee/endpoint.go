@@ -3,8 +3,8 @@ package employee
 import (
 	"context"
 	"github.com/labstack/echo/v4"
-	"go-tutorial/code_template/internal"
-	"go-tutorial/code_template/internal/models"
+	"go-basic-101/code_template/internal"
+	"go-basic-101/code_template/internal/models"
 	"net/http"
 )
 
