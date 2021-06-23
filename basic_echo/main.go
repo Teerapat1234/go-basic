@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-basic-101/basic_echo/internal"
+	"go_basic/basic_echo/internal"
 	"net/http"
 
 	"github.com/labstack/echo/v4"

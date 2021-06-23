@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/go-playground/validator/v10"
-	"go-basic-101/basic_validator/model"
+	"go_basic/basic_validator/model"
 )
 
 // use a single instance of Validate, it caches struct info

@@ -2,11 +2,11 @@ package employee
 
 import (
 	"context"
-	"go-basic-101/code_template/internal"
-	"go-basic-101/code_template/internal/models"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+	"go_basic/code_template/internal"
+	"go_basic/code_template/internal/models"
 )
 
 type Repo struct {

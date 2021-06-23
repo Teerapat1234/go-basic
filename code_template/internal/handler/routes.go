@@ -3,9 +3,9 @@ package handler
 import (
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"go-basic-101/code_template/internal"
-	"go-basic-101/code_template/internal/employee"
-	"go-basic-101/code_template/internal/health"
+	"go_basic/code_template/internal"
+	"go_basic/code_template/internal/employee"
+	"go_basic/code_template/internal/health"
 	"net/http"
 )
 
