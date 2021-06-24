@@ -23,14 +23,15 @@ func validateStruct() {
 		Street: "Eavesdown Docks",
 		Planet: "Persphone",
 		Phone:  "none",
+		City:   "Bangkok",
 	}
 
 	user := &model.User{
-		FirstName:      "Badger",
+		FirstName:      "John",
 		LastName:       "Smith",
-		Age:            135,
-		Email:          "Badger.Smith@gmail.com",
-		FavouriteColor: "#000-",
+		Age:            130,
+		Email:          "smith@gmail.com",
+		FavouriteColor: "#000000",
 		Addresses:      []*model.Address{address},
 	}
 
@@ -50,14 +51,14 @@ func validateStruct() {
 
 			fmt.Println("Namespace : ", err.Namespace())
 			fmt.Println("Field : ", err.Field())
-			fmt.Println("StructNamespace : ", err.StructNamespace())
-			fmt.Println("StructField : ", err.StructField())
+			//fmt.Println("StructNamespace : ", err.StructNamespace())
+			//fmt.Println("StructField : ", err.StructField())
 			fmt.Println("Tag : ", err.Tag())
 			fmt.Println("ActualTag : ", err.ActualTag())
-			fmt.Println("Kind : ", err.Kind())
+			//fmt.Println("Kind : ", err.Kind())
 			fmt.Println("Type : ", err.Type())
-			fmt.Println("Value : ", err.Value())
-			fmt.Println("Param : ", err.Param())
+			//fmt.Println("Value : ", err.Value())
+			//fmt.Println("Param : ", err.Param())
 			fmt.Println()
 		}
 
@@ -70,9 +71,9 @@ func validateStruct() {
 
 func validateVariable() {
 
-	myEmail := "joeybloggs.gmail.com"
-
-	errs := validate.Var(myEmail, "required,email")
+	//myEmail := "joeybloggs@gmail.com"
+	age := 130
+	errs := validate.Var(age, "gte=0,lte=130")
 
 	if errs != nil {
 		fmt.Println(errs) // output: Key: "" Error:Field validation for "" failed on the "email" tag

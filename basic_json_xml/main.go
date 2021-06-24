@@ -26,7 +26,7 @@ type address struct {
 
 func main() {
 	someoneJSON := []byte(`{
-					"first_name":"Gopher", 
+					"first_name":"Gopher",
 					"last_name":"Conference",
 					"age": 8,
 					"address" : {"no":"904", "moo":10, "district":"Dusit", "province":"Bangkok"}
@@ -43,7 +43,7 @@ func main() {
 
 	someoneXML := []byte(`
 				<people>
-					<first_name>Gopher</first_name> 
+					<first_name>Gopher</first_name>
 					<last_name>Conference</last_name>
 					<age>8</age>
 					<address><no>904"</no><moo>10</moo><district>Dusit</district><province>Bangkok</province></address>
@@ -104,6 +104,8 @@ func main() {
 	var inputData struct {
 		UserId int `json:"userId"`
 	}
+
+	inputData.UserId = 1
 
 	idb, err := json.Marshal(inputData)
 	if err != nil {
